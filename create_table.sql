@@ -1,4 +1,4 @@
--- Create the personal_details table
+-- Create the personal_details tables
 CREATE TABLE IF NOT EXISTS personal_details (
     id INT AUTO_INCREMENT PRIMARY KEY,
     name VARCHAR(255) NOT NULL,
