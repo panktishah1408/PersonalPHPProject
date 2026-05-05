@@ -3,7 +3,7 @@ require_once __DIR__ . '/config.php';
 
 function render_error_page(string $message, int $code = 400) {
     http_response_code($code);
-    echo '<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><title>Error</title><style>body{font-family:Arial,sans-serif;max-width:760px;margin:24px auto;} .error{color:#b00;margin-bottom:16px;}</style></head><body><h1>Error</h1><div class="error">' . htmlspecialchars($message, ENT_QUOTES, 'UTF-8') . '</div><p><a href="list.php">Back to list</a></p></body></html>';
+    echo '<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><title>Error</title><link rel="stylesheet" href="assets/style.css"></head><body class="form-page"><h1>Error</h1><div class="error">' . htmlspecialchars($message, ENT_QUOTES, 'UTF-8') . '</div><p><a href="list.php">Back to list</a></p></body></html>';
     exit;
 }
 
@@ -124,16 +124,9 @@ $interestOptions = ['sports' => 'Sports', 'music' => 'Music', 'reading' => 'Read
 <head>
     <meta charset="UTF-8">
     <title>Edit Record</title>
-    <style>
-        body { font-family: Arial, sans-serif; max-width: 760px; margin: 24px auto; }
-        label { display: block; margin: 12px 0 4px; }
-        input[type="text"], input[type="email"], input[type="date"], textarea, select { width: 100%; padding: 8px; box-sizing: border-box; }
-        .field-group { margin-bottom: 16px; }
-        .checkbox-group input { margin-right: 8px; }
-        .error { color: #b00; margin-bottom: 16px; }
-    </style>
+    <link rel="stylesheet" href="assets/style.css">
 </head>
-<body>
+<body class="form-page">
     <h1>Edit Record</h1>
     <?php if (!empty($errors)): ?>
         <div class="error">

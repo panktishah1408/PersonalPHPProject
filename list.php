@@ -22,15 +22,7 @@ function format_interests($value) {
 <head>
     <meta charset="UTF-8">
     <title>Saved Personal Details</title>
-    <style>
-        body { font-family: Arial, sans-serif; margin: 24px; }
-        table { width: 100%; border-collapse: collapse; margin-top: 16px; }
-        th, td { border: 1px solid #ccc; padding: 8px; text-align: left; }
-        th { background: #f4f4f4; }
-        a { color: #0066cc; text-decoration: none; }
-        a:hover { text-decoration: underline; }
-        .error { color: #b00; margin-bottom: 16px; }
-    </style>
+    <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
     <h1>Saved Records</h1>

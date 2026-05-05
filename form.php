@@ -34,17 +34,9 @@ $interestOptions = ['sports' => 'Sports', 'music' => 'Music', 'reading' => 'Read
 <head>
     <meta charset="UTF-8">
     <title>Personal Details Form</title>
-    <style>
-        body { font-family: Arial, sans-serif; max-width: 760px; margin: 24px auto; }
-        label { display: block; margin: 12px 0 4px; }
-        input[type="text"], input[type="email"], input[type="date"], textarea, select { width: 100%; padding: 8px; box-sizing: border-box; }
-        .field-group { margin-bottom: 16px; }
-        .checkbox-group input { margin-right: 8px; }
-        .error { color: #b00; margin-bottom: 16px; }
-        .success { color: #080; margin-bottom: 16px; }
-    </style>
+    <link rel="stylesheet" href="assets/style.css">
 </head>
-<body>
+<body class="form-page">
     <h1>Personal Details Form</h1>
     <?php if (!empty($errors)): ?>
         <div class="error">
